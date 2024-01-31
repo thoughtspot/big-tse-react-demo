@@ -39,10 +39,6 @@ export const routes = [
     element: <FullApp />
   },
   {
-    path: "/api",
-    element: <Api />
-  },
-  {
     path: "/multi-viz",
     element: <MultiViz />
   },

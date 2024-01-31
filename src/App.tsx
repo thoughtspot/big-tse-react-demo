@@ -6,7 +6,6 @@ import { notification } from "antd";
 import { routes } from "./routes";
 import { Nav } from "./components/nav/nav";
 import { USERNAME, TOKEN_ENDPOINT, TS_HOST } from "./constants";
-import { APIProvider } from "./api-client";
 import { PrerenderdLiveboardProvider } from "./components/prerender/prerender";
 
 // Initialize ThoughtSpot Visual embed sdk
@@ -64,11 +63,9 @@ function AppView() {
 export default function App() {
   return (
     <HashRouter>
-      <APIProvider>
-        <PrerenderdLiveboardProvider>
-          <AppView />
-        </PrerenderdLiveboardProvider>
-      </APIProvider>
+      <PrerenderdLiveboardProvider>
+        <AppView />
+      </PrerenderdLiveboardProvider>
     </HashRouter>
   );
 }

@@ -31,9 +31,6 @@ export const Nav = () => {
       <Menu.Item key="/multi-viz">
         <Link to="/multi-viz">Multi Viz</Link>
       </Menu.Item>
-      <Menu.Item key="/api">
-        <Link to="/api">REST Api</Link>
-      </Menu.Item>
       <Menu.Item key="/prerender">
         <Link to="/prerender">Prerender</Link>
       </Menu.Item>

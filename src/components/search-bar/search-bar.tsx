@@ -8,7 +8,6 @@ import _ from "lodash";
 import React from "react";
 import { useEventLogger, actionSet } from "../../utils/utils";
 import { Pivot } from "./pivot";
-import { getAutoSpec } from "./auto-spec";
 import "./search-bar.css";
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -36,7 +35,6 @@ export const SearchBar = () => {
       );
       const rows = _.zip(...data);
       const pivotData = [cols, ...rows];
-      getAutoSpec(result.embedAnswerData.columns, rows);
       console.log(pivotData);
 
       setData(pivotData);
