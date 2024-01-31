@@ -1,0 +1,17 @@
+.horizontal {
+  display: flex;
+  gap: 2px;
+}
+
+.sider-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+.liveboard-content {
+  /* min-height: 600px;
+  height: 600px; */
+}
